@@ -62,9 +62,20 @@ h2, h3, h4 {
     height: 100%;
   }
   .navbar {
+    padding: 0;
     .navbar-brand {
+      margin: 0;
+      padding: 15px;
+      flex: 1;
       img {
-        width: 40px;
+        width: 60px;
+      }
+    }
+    ul.navbar-nav {
+      flex: 6;
+      li.nav-item {
+        padding: 15px;
+        flex: 1;
       }
     }
   }
@@ -163,3 +174,4 @@ h2, h3, h4 {
     list-style-type: none;
   }
 }
+
