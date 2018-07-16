@@ -10,9 +10,11 @@
 %section.jumbotron.d-flex.flex-column.text-center.pt-0.pb-0.position-relative#hero
   .container.h-100.position-relative
     .navbar.navbar-expand-lg.navbar-dark.bg-dark.box-shadow
-      .collapse.navbar-collapse
-        %a.navbar-brand.d-flex.align-items-center
-          = image_tag 'logo.png'
+      %a.navbar-brand.d-flex.align-items-center
+        = image_tag 'logo.png'
+      %button.navbar-toggler{type: 'button', "data-toggle": "collapse", "data-target": "#navbar-content"}
+        %span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbar-content
         %ul.navbar-nav.mr-auto
           %li.nav-item
             %a.nav-link.text-light Home
@@ -146,7 +148,8 @@
         %h3 Got Questions?
         %p Not finding what you're looking for? Reach out to Mack Service Operations.
         %p
-          %a FAQs %p
+          %a FAQs 
+        %p
           %a Request for Assistance
       .col-md-6
         %h3 Training
