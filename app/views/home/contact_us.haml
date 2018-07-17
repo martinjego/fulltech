@@ -7,8 +7,8 @@
       %i.fa.fa-envelope.mr-1
       %span draft@cars.com.ph
     
-%section.jumbotron.d-flex.flex-column.text-center.pt-0.pb-0.position-relative#hero{"style": "background-image: url('assets/aboutus-bg.png/'); border-bottom: 0px; height: 80vh"}
-  .container.h-100.position-relative
+%section#contact-us
+  .container.position-relative
     .navbar.navbar-expand-lg.navbar-dark.bg-dark.box-shadow.position-absolute.w-100
       %a.navbar-brand.d-flex.align-items-center
         = image_tag 'logo.png'
@@ -30,36 +30,45 @@
             %a.nav-link.text-light Contact Us
           %li.nav-item
             %a.nav-link.text-light News
-    .hero-content
-      %h1.text-uppercase.text-light.text-right.mr-4.mt-4 About Us
-
-%section.mb-4#aboutus
-  .container
-    .row
-      .col-md-12.pb-4.mb-4
-        %h3.text-uppercase.text-red.text-bold About Us 
-        %p 
-          Full Tech Equipment and Machinery Inc. was established
-          January 2018 with the aim to support the growing demand for
-          dependable heavy equipment in the fields of construction,
-          engineering and mining to name a few. Led by a competent
-          management, we will strive to be the best in this endeavour.
-    .row
-      .col-md-5.pb-4.mb-4
-        %h3.text-uppercase.text-red.text-bold Mission
-        %p 
-          We are fully committed in providing quality and reliable
-          heavy equipment and machinery geared towards helping our
-          partners reach their goals and create value in all our
-          undertakings.
-      .col-md-5.pb-4.mb-4
-        %h3.text-uppercase.text-red.text-bold Vision
-        %p 
-          We envision ourselves to be the top choice of the industry
-          in providing solutions to heavy equipment requirements and be
-          recognized as a major and dependable contributor to the
-          development of the fields we are engaged in.
-
+  .container.pt-4.pb-4.mb-4
+    .row.pt-4
+      .col-md-8.pt-4.mt-4
+        %h2.text-uppercase.text-red Contact Us
+        %p Lorem Ipsum
+        %form
+          .form-group
+            %label Name:
+            %input.form-control{type: 'text'}
+          .form-group
+            %label Email:
+            %input.form-control{type: 'text'}
+          .form-group
+            %label Email:
+            %textarea.form-control{type: 'text'}
+          .form-group
+            %button.form-control.border-0.bg-red.text-light Submit
+      .col-md-4.pt-4.mt-4
+        .contact-group.mb-4
+          %h2.text-red Address
+          %p #123 Truck Street, Metro Manila, Makati City
+        .contact-group.mb-4
+          %h2.text-red Contact Number
+          %p (02) 123 4567 | 0917 123 1234
+        .contact-group.mb-4
+          %h2.text-red Email Address
+          %p CAMC@gmail.com
+        .contact-group
+          %h2.text-red Social Media
+          %ul.m-0.p-0.contact-list
+            %li.facebook 
+              %i.fa.fa-facebook.mr-2
+              %span CAMC
+            %li.twitter 
+              %i.fa.fa-twitter.mr-2
+              %span CAMC
+            %li.instagram 
+              %i.fa.fa-instagram.mr-2
+              %span CAMC
 %section.bg-light-black.text-light.pt-4#footer
   .container.border-bottom.border-light.pt-4.pb-4
     .row
@@ -67,7 +76,8 @@
         %h3 Got Questions?
         %p Not finding what you're looking for? Reach out to Mack Service Operations.
         %p
-          %a FAQs %p
+          %a FAQs 
+        %p
           %a Request for Assistance
       .col-md-6
         %h3 Training
