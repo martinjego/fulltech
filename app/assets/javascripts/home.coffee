@@ -2,9 +2,10 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 #= require rails-ujs
+#= require jquery3
 #= require activestorage
 #= require turbolinks
 #= require_tree .
-#= require jquery3
 #= require popper
 #= require bootstrap
+
