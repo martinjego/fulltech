@@ -1,35 +1,9 @@
-%header.bg-red.text-light
-  .container.d-flex.justify-content-start.align-content-center.p-4
-    .contact-tab.mr-4
-      %i.fa.fa-phone.mr-1
-      %span (02) 910 0699
-    .contact-tab
-      %i.fa.fa-envelope.mr-1
-      %span draft@cars.com.ph
-    
+= render 'shared/header' 
+
 %section.jumbotron.d-flex.flex-column.text-center.pt-0.pb-0.position-relative#hero{"style": "background-image: url('assets/aboutus-bg.png/'); border-bottom: 0px; height: 80vh"}
   .container.h-100.position-relative
-    .navbar.navbar-expand-lg.navbar-dark.bg-dark.box-shadow.position-absolute.w-100
-      %a.navbar-brand.d-flex.align-items-center
-        = image_tag 'logo.png'
-      %button.navbar-toggler{type: 'button', "data-toggle": "collapse", "data-target": "#navbar-content"}
-        %span.navbar-toggler-icon
-      .collapse.navbar-collapse#navbar-content
-        %ul.navbar-nav.mr-auto
-          %li.nav-item
-            %a.nav-link.text-light Home
-          %li.nav-item
-            %a.nav-link.text-light About Us
-          %li.nav-item.dropdown
-            %a.nav-link.text-light.dropdown-toggle{href: '#', id: 'ourProducts', role: 'button', "data-toggle": 'dropdown', "aria-haspopup": 'true', "aria-expanded": 'false'} Our Products
-            .dropdown-menu{"aria-labeledby": "ourProducts"}
-              %a.dropdown-item CAMC
-              %a.dropdown-item ...
-              %a.dropdown-item ...
-          %li.nav-item
-            %a.nav-link.text-light Contact Us
-          %li.nav-item
-            %a.nav-link.text-light News
+    = render 'shared/navbar'
+
     .hero-content
       %h1.text-uppercase.text-light.text-right.mr-4.mt-4 About Us
 
