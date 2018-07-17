@@ -28,4 +28,5 @@
 # Added for vim configs
 *.swp
 *.swo
+*.swn
 /config/database.yml
