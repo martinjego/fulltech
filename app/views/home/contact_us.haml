@@ -1,0 +1,106 @@
+%header.bg-red.text-light
+  .container.d-flex.justify-content-start.align-content-center.p-4
+    .contact-tab.mr-4
+      %i.fa.fa-phone.mr-1
+      %span (02) 910 0699
+    .contact-tab
+      %i.fa.fa-envelope.mr-1
+      %span draft@cars.com.ph
+    
+%section#contact-us
+  .container.position-relative
+    = render 'navbar'
+  .container.pt-4.pb-4.mb-4
+    .row.pt-4
+      .col-md-8.pt-4.mt-4
+        %h2.text-uppercase.text-red Contact Us
+        %p Lorem Ipsum
+        %form
+          .form-group
+            %label Name:
+            %input.form-control{type: 'text'}
+          .form-group
+            %label Email:
+            %input.form-control{type: 'text'}
+          .form-group
+            %label Email:
+            %textarea.form-control{type: 'text'}
+          .form-group
+            %button.form-control.border-0.bg-red.text-light Submit
+      .col-md-4.pt-4.mt-4
+        .contact-group.mb-4
+          %h2.text-red Address
+          %p #123 Truck Street, Metro Manila, Makati City
+        .contact-group.mb-4
+          %h2.text-red Contact Number
+          %p (02) 123 4567 | 0917 123 1234
+        .contact-group.mb-4
+          %h2.text-red Email Address
+          %p CAMC@gmail.com
+        .contact-group
+          %h2.text-red Social Media
+          %ul.m-0.p-0.contact-list
+            %li.facebook 
+              %i.fa.fa-facebook.mr-2
+              %span CAMC
+            %li.twitter 
+              %i.fa.fa-twitter.mr-2
+              %span CAMC
+            %li.instagram 
+              %i.fa.fa-instagram.mr-2
+              %span CAMC
+%section.bg-light-black.text-light.pt-4#footer
+  .container.border-bottom.border-light.pt-4.pb-4
+    .row
+      .col-md-6
+        %h3 Got Questions?
+        %p Not finding what you're looking for? Reach out to Mack Service Operations.
+        %p
+          %a FAQs 
+        %p
+          %a Request for Assistance
+      .col-md-6
+        %h3 Training
+        %p Watch videos on Mack concrete boom pump training.
+        %a View all training materials
+    .row
+      .col-md-6
+        %p Keep in touch with CAMC
+        %input.border-0.background-light-black.p-2{type: 'email', placeholder: 'Email'}
+      .col-md-6.d-flex.justify-content-end
+        %ul
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+        %ul
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+  .container.pt-4
+    .row
+      .col-md-12.pb-2
+        .float-right.text-right
+          = image_tag 'logo.png', class: 'mb-4 footer-logo'
+          %p Full Tech Equipment and Machinery Inc.

@@ -46,11 +46,66 @@ h2, h3, h4 {
   border-radius: 0;
 }
 
+.navbar {
+  padding: 0;
+  top: 0;
+  .navbar-brand {
+    margin: 0;
+    padding: 15px;
+    flex: 1;
+    img {
+      width: 60px;
+    }
+  }
+  ul.navbar-nav {
+    flex: 6;
+    li.nav-item {
+      padding: 15px;
+      flex: 1;
+    }
+    .dropdown-menu {
+      ul {
+        list-style-type: none;
+        li {
+          padding: 0;
+          margin: 10px;
+          img {
+            width: 100%;
+            position: relative;
+          }
+          h1 {
+            top: 0;
+            left: 0;
+            z-index: 2;
+            &:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              width: 0;
+              width: 100%;
+              height: 100%;
+              background: $color-black;
+              opacity: 0.6;
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact-us{
+  .contact-list {
+    list-style-type: none;
+  }
+}
+
 #hero {
-  border-bottom: 80px solid $color-gray;
-  background: image_url('CAMC-1.jpeg');
+  border-bottom: 70px solid $color-gray;
   background-size: cover;
   background-position: center;
+  height: 80vh;
   &:before {
     background: $color-black;
     opacity: 0.3;
@@ -61,53 +116,7 @@ h2, h3, h4 {
     width: 100%;
     height: 100%;
   }
-  .navbar {
-    padding: 0;
-    .navbar-brand {
-      margin: 0;
-      padding: 15px;
-      flex: 1;
-      img {
-        width: 60px;
-      }
-    }
-    ul.navbar-nav {
-      flex: 6;
-      li.nav-item {
-        padding: 15px;
-        flex: 1;
-      }
-      .dropdown-menu {
-        ul {
-          list-style-type: none;
-          li {
-            padding: 0;
-            margin: 10px;
-            img {
-              width: 100%;
-              position: relative;
-            }
-            h1 {
-              top: 0;
-              left: 0;
-              z-index: 2;
-              &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                width: 0;
-                width: 100%;
-                height: 100%;
-                background: $color-black;
-                opacity: 0.6;
-                z-index: -1;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+
   .hero-content {
     padding: 150px 0;
   }
@@ -139,11 +148,12 @@ h2, h3, h4 {
 }
 
 #services {
+  padding: 50px 0;
   h1 {
     font-size: 60px;
   }
   .jumbotron {
-    background: image_url('CAMC-3.jpeg');
+    background: image_url('home-services-bg.png');
     background-size: cover;
     background-position: center;
     &:before {
@@ -166,13 +176,17 @@ h2, h3, h4 {
     }
   }
 }
+
+#achievements {
+}
+
 
 #trucks {
   h1 {
     font-size: 60px;
   }
   .jumbotron {
-    background: image_url('CAMC-8.jpeg');
+    background: image_url('home-trucks-bg.png');
     background-size: cover;
     background-position: center;
     &:before {
@@ -195,6 +209,12 @@ h2, h3, h4 {
   }
 }
 
+// About Us page
+#aboutus {
+  padding: 50px 0;
+}
+
+// Footer
 #footer {
   .footer-logo {
     width: 100px;
