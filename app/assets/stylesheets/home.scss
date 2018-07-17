@@ -47,10 +47,10 @@ h2, h3, h4 {
 }
 
 #hero {
-  border-bottom: 80px solid $color-gray;
-  background: image_url('CAMC-1.jpeg');
+  border-bottom: 70px solid $color-gray;
   background-size: cover;
   background-position: center;
+  height: 80vh;
   &:before {
     background: $color-black;
     opacity: 0.3;
@@ -99,11 +99,12 @@ h2, h3, h4 {
 }
 
 #services {
+  padding: 50px 0;
   h1 {
     font-size: 60px;
   }
   .jumbotron {
-    background: image_url('CAMC-3.jpeg');
+    background: image_url('home-services-bg.png');
     background-size: cover;
     background-position: center;
     &:before {
@@ -126,13 +127,17 @@ h2, h3, h4 {
     }
   }
 }
+
+#achievements {
+}
+
 
 #trucks {
   h1 {
     font-size: 60px;
   }
   .jumbotron {
-    background: image_url('CAMC-8.jpeg');
+    background: image_url('home-trucks-bg.png');
     background-size: cover;
     background-position: center;
     &:before {
@@ -155,10 +160,12 @@ h2, h3, h4 {
   }
 }
 
+// About Us page
 #aboutus {
   padding: 50px 0;
 }
 
+// Footer
 #footer {
   .footer-logo {
     width: 100px;
