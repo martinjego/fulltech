@@ -8,18 +8,20 @@
       .col-md-8.pt-4.mt-4
         %h2.text-uppercase.text-red Contact Us
         %p Lorem Ipsum
-        %form
+        = render 'shared/flash_messages'
+
+        = form_tag 'contact_email' do
           .form-group
             %label Name:
-            %input.form-control{type: 'text'}
+            = text_field_tag 'name', '', class: 'form-control', required: true
           .form-group
             %label Email:
-            %input.form-control{type: 'text'}
+            = text_field_tag 'email', '', class: 'form-control', required: true
           .form-group
-            %label Email:
-            %textarea.form-control{type: 'text'}
+            %label Message:
+            = text_area_tag 'message', '', class: 'form-control', required: true
           .form-group
-            %button.form-control.border-0.bg-red.text-light Submit
+            =  submit_tag "Submit", value: "Submit",  class: "form-control border-0 bg-red text-light"
       .col-md-4.pt-4.mt-4
         .contact-group.mb-4
           %h2.text-red Address
