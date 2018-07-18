@@ -1,0 +1,31 @@
+.navbar.navbar-expand-lg.navbar-dark.bg-dark.box-shadow.position-absolute.w-100
+  %a.navbar-brand.align-items-center
+    = image_tag 'logo.png'
+  %button.navbar-toggler{type: 'button', "data-toggle": "collapse", "data-target": "#navbar-content"}
+    %span.navbar-toggler-icon
+  .collapse.navbar-collapse#navbar-content
+    %ul.navbar-nav.mr-auto
+      %li.nav-item
+        %a.nav-link.text-light Home
+      %li.nav-item
+        %a.nav-link.text-light About Us
+      %li.nav-item.dropdown.position-static
+        %a.nav-link.text-light.dropdown-toggle{href: '#', id: 'ourProducts', role: 'button', "data-toggle": 'dropdown', "aria-haspopup": 'true', "aria-expanded": 'false'} Our Products
+        .dropdown-menu.w-100.pt-4.pb-4{"aria-labeledby": "ourProducts"}
+          %ul.d-flex.justify-content-between
+            %li.dropdown-item.position-relative
+              = image_tag 'dropdown-item.jpeg'
+              %h1.position-absolute.d-flex.justify-content-center.align-items-center.w-100.h-100.text-light CAMC
+            %li.dropdown-item.position-relative
+              = image_tag 'dropdown-item.jpeg'
+              %h1.position-absolute.d-flex.justify-content-center.align-items-center.w-100.h-100.text-light.text-uppercase Soon
+            %li.dropdown-item.position-relative
+              = image_tag 'dropdown-item.jpeg'
+              %h1.position-absolute.d-flex.justify-content-center.align-items-center.w-100.h-100.text-light.text-uppercase Soon
+            %li.dropdown-item.position-relative
+              = image_tag 'dropdown-item.jpeg'
+              %h1.position-absolute.d-flex.justify-content-center.align-items-center.w-100.h-100.text-light.text-uppercase Soon
+      %li.nav-item
+        %a.nav-link.text-light Contact Us
+      %li.nav-item
+        %a.nav-link.text-light News

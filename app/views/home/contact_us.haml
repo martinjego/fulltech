@@ -1,16 +1,8 @@
-%header.bg-red.text-light
-  .container.d-flex.justify-content-start.align-content-center.p-4
-    .contact-tab.mr-4
-      %i.fa.fa-phone.mr-1
-      %span (02) 910 0699
-    .contact-tab
-      %i.fa.fa-envelope.mr-1
-      %span draft@cars.com.ph
+= render 'shared/header' 
     
-%section.jumbotron.d-flex.flex-column.pt-0.pb-0#contact-us
+%section.jumbotron.d-flex.text-center.flex-column.pt-0.pb-0#contact-us
   .container.position-relative
-    = render 'shared/navbar'
-
+    = render 'navbar'
   .container.pt-4.pb-4.mb-4
     .row.pt-4#contact-content
       .col-md-8.pt-4.mt-4
