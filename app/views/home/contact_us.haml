@@ -7,31 +7,12 @@
       %i.fa.fa-envelope.mr-1
       %span draft@cars.com.ph
     
-%section#contact-us
+%section.jumbotron.d-flex.flex-column.pt-0.pb-0#contact-us
   .container.position-relative
-    .navbar.navbar-expand-lg.navbar-dark.bg-dark.box-shadow.position-absolute.w-100
-      %a.navbar-brand.d-flex.align-items-center
-        = image_tag 'logo.png'
-      %button.navbar-toggler{type: 'button', "data-toggle": "collapse", "data-target": "#navbar-content"}
-        %span.navbar-toggler-icon
-      .collapse.navbar-collapse#navbar-content
-        %ul.navbar-nav.mr-auto
-          %li.nav-item
-            %a.nav-link.text-light Home
-          %li.nav-item
-            %a.nav-link.text-light About Us
-          %li.nav-item.dropdown
-            %a.nav-link.text-light.dropdown-toggle{href: '#', id: 'ourProducts', role: 'button', "data-toggle": 'dropdown', "aria-haspopup": 'true', "aria-expanded": 'false'} Our Products
-            .dropdown-menu{"aria-labeledby": "ourProducts"}
-              %a.dropdown-item CAMC
-              %a.dropdown-item ...
-              %a.dropdown-item ...
-          %li.nav-item
-            %a.nav-link.text-light Contact Us
-          %li.nav-item
-            %a.nav-link.text-light News
+    = render 'shared/navbar'
+
   .container.pt-4.pb-4.mb-4
-    .row.pt-4
+    .row.pt-4#contact-content
       .col-md-8.pt-4.mt-4
         %h2.text-uppercase.text-red Contact Us
         %p Lorem Ipsum
