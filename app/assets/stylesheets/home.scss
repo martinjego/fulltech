@@ -53,6 +53,8 @@ h2, h3, h4 {
 .navbar {
   padding: 0;
   top: 0;
+  left: 0;
+  z-index: 2;
   .navbar-brand {
     margin: 0;
     padding: 15px;
@@ -110,8 +112,12 @@ h2, h3, h4 {
 }
 
 #contact-us{
+  margin-bottom: 0px;
   .contact-list {
     list-style-type: none;
+  }
+  #contact-content {
+    margin: 100px 0px;
   }
 }
 
@@ -270,5 +276,11 @@ h2, h3, h4 {
   }
   ul {
     list-style-type: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #achievements {
+    text-align: center;
   }
 }
