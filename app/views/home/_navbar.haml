@@ -14,8 +14,9 @@
         .dropdown-menu.w-100.pt-4.pb-4{"aria-labeledby": "ourProducts"}
           %ul.d-flex.justify-content-between
             %li.dropdown-item.position-relative
-              = image_tag 'dropdown-item.jpeg'
-              %h1.position-absolute.d-flex.justify-content-center.align-items-center.w-100.h-100.text-light CAMC
+              = link_to product_path do
+                = image_tag 'dropdown-item.jpeg'
+                %h1.position-absolute.d-flex.justify-content-center.align-items-center.w-100.h-100.text-light CAMC
             %li.dropdown-item.position-relative
               = image_tag 'dropdown-item.jpeg'
               %h1.position-absolute.d-flex.justify-content-center.align-items-center.w-100.h-100.text-light.text-uppercase Soon

@@ -29,5 +29,6 @@
 *.swp
 *.swo
 *.swn
+*.swm
 .env
 /config/database.yml
