@@ -1,0 +1,42 @@
+= render 'shared/header' 
+
+%section.jumbotron.d-flex.flex-column.text-center.pt-0.pb-0.position-relative.no-border-bottom#hero{"style": "background-image: url('assets/aboutus-bg.png/');"}
+  .container.h-100.position-relative
+    = render 'navbar'
+    .hero-content
+      %h3.text-uppercase.text-light.text-left.text-bold Trucks
+      %h1.text-uppercase.text-light.text-left.mr-4.mt-4 Built for this.
+      %p.text-light.text-left
+        Lorem Ipsum
+
+%section#product-list
+  .container
+    .row.pl-4.pr-4
+      .col-md-3
+        = image_tag 'dropdown-item.jpeg', class: 'w-100'
+        %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
+      .col-md-3
+        = image_tag 'dropdown-item.jpeg', class: 'w-100'
+        %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
+      .col-md-3
+        = image_tag 'dropdown-item.jpeg', class: 'w-100'
+        %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
+      .col-md-3
+        = image_tag 'dropdown-item.jpeg', class: 'w-100'
+        %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
+
+%section#our-products
+  .container
+    .row.pt-4.mt-4
+      %h2.text-red.text-bold.text-uppercase Our Products
+    .row.pt-4
+      %h2.text-black CAMC
+    .row.pt-4
+      .col-md-6
+        .image-container.w-100{style: "background: url(#{asset_path 'dropdown-item.jpeg'}); background-size: cover; height: 300px;"}
+      .col-md-6
+        .image-container.w-100{style: "background: url(#{asset_path 'dropdown-item.jpeg'}); background-size: cover; height: 300px;"}
+      .col-md-6
+        .image-container.w-100{style: "background: url(#{asset_path 'dropdown-item.jpeg'}); background-size: cover; height: 300px;"}
+      .col-md-6
+        .image-container.w-100{style: "background: url(#{asset_path 'dropdown-item.jpeg'}); background-size: cover; height: 300px;"}

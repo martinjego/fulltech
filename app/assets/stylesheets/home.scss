@@ -115,6 +115,9 @@ h2, h3, h4 {
   border-bottom: 70px solid $color-gray;
   background-size: cover;
   background-position: center;
+  &.no-border-bottom {
+    border-bottom: 0 !important;
+  }
   &:before {
     background: $color-black;
     opacity: 0.3;
@@ -174,8 +177,7 @@ h2, h3, h4 {
 
 #trucks-list {
   img {
-    object-fit: cover;
-    height: 250px !important;
+    object-fit: cover; height: 250px !important;
   }
 }
 
@@ -244,6 +246,17 @@ h2, h3, h4 {
 // About Us page
 #aboutus {
   padding: 50px 0;
+}
+
+//Product List page
+#product-list {
+  img {
+    position: relative;
+  }
+  h1 {
+    top: 0;
+    left: 0;
+  }
 }
 
 // Footer
