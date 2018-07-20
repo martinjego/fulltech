@@ -9,21 +9,7 @@
       %p.text-light.text-left
         Lorem Ipsum
 
-%section#product-list
-  .container
-    .row.pl-4.pr-4
-      .col-md-3
-        = image_tag 'dropdown-item.jpeg', class: 'w-100'
-        %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
-      .col-md-3
-        = image_tag 'dropdown-item.jpeg', class: 'w-100'
-        %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
-      .col-md-3
-        = image_tag 'dropdown-item.jpeg', class: 'w-100'
-        %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
-      .col-md-3
-        = image_tag 'dropdown-item.jpeg', class: 'w-100'
-        %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
+= render 'list'
 
 %section#our-products.mb-4
   .container
@@ -35,28 +21,28 @@
         %h2.text-black CAMC
     .row.pt-4
       .col-md-6.mb-4
-        .image-container.w-100.mb-2{style: "background: url(#{asset_path 'dropdown-item.jpeg'}); background-size: cover; height: 350px;"}
+        .image-container.w-100.mb-2{style: "background: url(#{asset_path 'trucks/A1.png'}); background-size: cover; height: 350px;"}
         %h3 Product title
         %p.m-0
           %span.text-bold Model:
           %span H1423ASD3
         %a See full description
       .col-md-6.mb-4
-        .image-container.w-100.mb-2{style: "background: url(#{asset_path 'dropdown-item.jpeg'}); background-size: cover; height: 350px;"}
+        .image-container.w-100.mb-2{style: "background: url(#{asset_path 'trucks/A2.png'}); background-size: cover; height: 350px;"}
         %h3 Product title
         %p.m-0
           %span.text-bold Model:
           %span H1423ASD3
         %a See full description
       .col-md-6.mb-4
-        .image-container.w-100.mb-2{style: "background: url(#{asset_path 'dropdown-item.jpeg'}); background-size: cover; height: 350px;"}
+        .image-container.w-100.mb-2{style: "background: url(#{asset_path 'trucks/A3.png'}); background-size: cover; height: 350px;"}
         %h3 Product title
         %p.m-0
           %span.text-bold Model:
           %span H1423ASD3
         %a See full description
       .col-md-6.mb-4
-        .image-container.w-100.mb-2{style: "background: url(#{asset_path 'dropdown-item.jpeg'}); background-size: cover; height: 350px;"}
+        .image-container.w-100.mb-2{style: "background: url(#{asset_path 'trucks/A4.png'}); background-size: cover; height: 350px;"}
         %h3 Product title
         %p.m-0
           %span.text-bold Model:
