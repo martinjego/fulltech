@@ -38,6 +38,10 @@ h2, h3, h4 {
   background: $color-light-gray;
 }
 
+.text-black {
+  color: $color-black;
+}
+
 .text-red {
   color: $color-red;
 }
@@ -97,6 +101,9 @@ h2, h3, h4 {
             }
           }
         }
+      }
+      &.left-auto {
+        left: auto !important;
       }
     }
     ul.navbar-nav {
