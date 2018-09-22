@@ -1,0 +1,37 @@
+= render 'shared/header' 
+
+%section.jumbotron.d-flex.flex-column.text-center.pt-0.pb-0.position-relative.no-border-bottom#hero{"style": "background-image: url('assets/headers/header-2.png/');"}
+  .container.h-100.position-relative
+    = render 'navbar'
+    .hero-content
+      %h2.text-uppercase.text-light.text-center.mr-4.mt-4 PRODUCT ADVANTAGES
+
+%section.mb-4#headerPage
+  .container
+    .row
+      .col-md-6.pb-4.mb-4
+        %h4.text-uppercase.text-red.text-bold Complete Vehicle
+        %p 
+          Reasonable layout and compact structure. We can develop the most practical chassis according to the purpose of the vehicle and working conditions
+      .col-md-6.pb-4.mb-4
+        %h4.text-uppercase.text-red.text-bold Power System
+        %p
+          Equipped with CAMC Engine which is the representative of the most advanced level. CAMC Engine meets EURO-4 and EURO-5 emission standards with high efficiency, energy conservation, environmental protection and high torque at low speed. Other domestic mature engines are also optional.
+      .col-md-6.pb-4.mb-4
+        %h4.text-uppercase.text-red.text-bold Suspension System
+        %p
+          The traditional mechanical suspension has the advantages of high bearing capacity, high reliability and superior comfort. Air suspension, rubber suspension, etc can be optional to meet the demands of different models.
+      .col-md-6.pb-4.mb-4
+        %h4.text-uppercase.text-red.text-bold Transmission System
+        %p
+          Through rigorous calculation and optimization analysis, different vehicles match reasonable speed ratio and torque to improve the traction ability and fuel cost of the complete vehicle.
+      .col-md-6.pb-4.mb-4
+        %h4.text-uppercase.text-red.text-bold Axle System
+        %p 
+          Adopting the full set of self-developed CAMC Axles which are safe, reliable and secure service and can satisfy the requirements of all vehicle models and working conditions.
+      .col-md-6.pb-4.mb-4
+        %h4.text-uppercase.text-red.text-bold Electrical System
+        %p
+          Central control module technology, high reliability and simple maintenance.
+
+= render 'footer'
