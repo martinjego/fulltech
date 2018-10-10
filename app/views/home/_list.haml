@@ -2,8 +2,9 @@
   .container
     .row.pl-4.pr-4
       .col-md-3
-        = image_tag 'trucks/camc.png', class: 'w-100'
-        %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
+        = link_to camc_path do
+          = image_tag 'trucks/camc.png', class: 'w-100'
+          %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light CAMC
       .col-md-3
         = image_tag 'trucks/truck2.png', class: 'w-100'
         %h1.position-absolute.w-100.h-100.d-flex.justify-content-center.align-items-center.text-light SOON

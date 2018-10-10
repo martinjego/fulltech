@@ -1,0 +1,360 @@
+= render 'shared/header' 
+
+%section.jumbotron.d-flex.flex-column.text-center.pt-0.pb-0.position-relative.no-border-bottom#hero{"style": "background-image: url('assets/aboutus-bg.png/');"}
+  .container.h-100.position-relative
+    = render 'navbar'
+    .hero-content
+      %h3.text-uppercase.text-light.text-left.text-bold Trucks
+      %h1.text-uppercase.text-light.text-left.mr-4.mt-4 Built for this.
+      %p.text-light.text-left
+        Lorem Ipsum
+
+= render 'list'
+
+%section#our-products.mb-4
+  .container
+    .row.pt-4
+      .col-md-12
+        %ul.nav.nav-pills
+          %li.active
+            %button.btn.btn-danger.text-light.mr-2{"data-toggle": "pill", href: "#content-1"} CAMC 4X2 H6 Tractor Truck
+
+    .tab-content
+      #content-1.tab-pane.fade.show.active
+        .row.pt-4
+          .col-md-12
+            %h3 CAMC 4X2 H6 Tractor Truck
+            %h3
+              %span.text-bold Model:
+              %span HN4183X34C4M4
+        .row
+          .col-md-12
+            = image_tag 'trucks/camc/A3.png', class: 'w-100'
+        .row.p-3
+          .col-md-12
+            %h5.text-center
+              Optional colors: RED, WHITE, BLUE, YELLOW
+        .row.pt-4
+          .col-md-6
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Engine:
+                %span.text-red CM6D18 420 40
+                %span.text-black.ml-4 420HP
+              %p.pb-4
+                %span.text-bold Type:
+                %span.pull-right Four-stroke, water-cooled, in-line, wet-liner, direct-injection 
+                %span.pull-right with <span class="text-red text-bold">ENGINE BRAKE, fuel economy controller </span>
+              %p
+                %span.text-bold Max. Power:
+                %span.pull-right <span class="text-bold text-red"> 309kw </span>/ 1900rpm
+              %p
+                %span.text-bold Max. Torque:
+                %span.pull-right <span class="text-bold text-red"> 1840N.M </span> / 1100~1600rpm
+              %p
+                %span.text-bold No. of cylinder:
+                %span.pull-right 6
+              %p
+                %span.text-bold Bore x Stroke:
+                %span.pull-right 118 * 150mm
+              %p
+                %span.text-bold Displacement:
+                %span.pull-right 9.84L
+              %p
+                %span.text-bold Controller type:
+                %span.pull-right Electronic
+              %p
+                %span.text-bold Air cleaner:
+                %span.pull-right Dry paper element
+              %p.pb-5
+                %span.text-bold Emission Standard:
+                %span.pull-right Euro IV
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Transmission
+              %p
+                %span.text-bold Model:
+                %span.pull-right 9SDB2051A
+              %p
+                %span.text-bold Brand:
+                %span.pull-right CAMC (same level as ZF technology)
+              %p.pb-3
+                %span.text-bold Type:
+                %span.pull-right Mechanical with <span class="text-red text-bold"> Servo &amp; Synchronizer &amp; Creep </span>
+              %p
+                %span.text-bold Ratio:
+                .row
+                  .col-md-6
+                    %p
+                      %span 1<sup>st</sup>:
+                      %span.pull-right 12.07
+                    %p
+                      %span 2<sup>nd</sup>:
+                      %span.pull-right 8.35
+                    %p
+                      %span 3<sup>rd</sup>:
+                      %span.pull-right 5.67
+                    %p
+                      %span 4<sup>th</sup>:
+                      %span.pull-right 4.07
+                  .col-md-6
+                    %p
+                      %span 5<sup>th</sup>:
+                      %span.pull-right 2.96
+                    %p
+                      %span 6<sup>th</sup>:
+                      %span.pull-right 2.05
+                    %p
+                      %span 7<sup>th</sup>:
+                      %span.pull-right 1.39
+                    %p
+                      %span 8<sup>th</sup>:
+                      %span.pull-right 1.00
+              %p
+                %span.text-bold Reverse:
+                %span.pull-right 14.19
+              %p.pb-5
+                %span.text-bold.text-red Creep:
+                %span.pull-right.text-red 15.49 (advantage)
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Axles:
+                %span.text-red Mercedes-Benz Technology
+              %p
+                %span.text-bold Front:
+                %span.pull-right Stub axle with double T-cross section
+              %p.pb-4
+                %span.text-bold <i>Capacity:</i>
+                %span.pull-right.text-red 7,500kg*1
+              %p
+                %span.text-bold Rear:
+                %span.pull-right HL300A Casting steel axles, double reduction with
+                %span.pull-right hub reduction and final drive ratio: <span class="text-red">5.263</span>
+              %p.pb-5
+                %span.pull-right <small><i> (If road condition is good and normally 
+                %span.pull-right running on flat road, the ratio can be changed 
+                %span.pull-right to 4.769, then the maximum speed is 81km/h) </i></small>
+              %p.py-5
+                %span.text-bold Capacity:
+                %span.pull-right.text-red 16,000kg*1
+             
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Brake
+              %p
+                %span.text-bold Service:
+                %span.pull-right Full Air Brake, Dual circuit
+              %p
+                %span.text-bold Parking:
+                %span.pull-right Spring actuator at rear wheels
+              %p.pb-5
+                %span.text-bold Auxiliary:
+                %span.pull-right Exhaust brake
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Fuel Tank
+              %p.p-2.text-red.text-center.text-bold
+                %span 
+                  %i Mounted on offside of the frame
+              %p
+                %span.text-bold Capacity:
+                %span.pull-right 500L
+              %p.pb-5
+                %span.text-bold Material:
+                %span.pull-right Galvanized steel
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Steering
+              %p
+                %span.text-bold Driving position:
+                %span.pull-right.text-red Left hand only
+              %p.pb-5
+                %span.text-bold Type:
+                %span.pull-right Recirculation ball with integral power assisted by oil
+
+          .col-md-6
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Dimensions (mm)
+              %p
+                %span.text-bold Overall dimension (L*W*H)mm:
+                %span.pull-right 6200 * 2500 * 3835
+              %p
+                %span.text-bold Number of axle:
+                %span.pull-right 2
+              %p
+                %span.text-bold Curb mass (kg):
+                %span.pull-right 6805
+              %p
+                %span.text-bold Tread (mm):
+                %span.pull-right 2065 / 1860 
+              %p
+                %span.text-bold Wheelbase (mm)(A+B):
+                %span.pull-right 3400
+              %p
+                %span.text-bold Min. ground clearance (mm):
+                %span.pull-right 285
+              %p.pb-5
+                %span.text-bold Crew
+                %span.pull-right 3
+
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Payload
+              %p
+                %span.text-bold Axle Load:
+                %p
+                  %span.pl-4 Front:
+                  %span.pull-right 1 * 7,500kg
+                %p.pb-5
+                  %span.pl-4 Rear:
+                  %span.pull-right 2 * 16,000kg
+              
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Electrical System
+              %p
+                %span.text-bold Batteries:
+                %span.pull-right 2 * 12 Volt – 150 AH * 2
+              %p
+                %span.text-bold Alternator:
+                %span.pull-right 24 Volt / 70A
+              %p.pb-5
+                %span.text-bold Starter:
+                %span.pull-right 24 Volt / 7.80kw
+
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Calculated Performance
+              %p
+                %span.text-bold Max. speed (km/h):
+                %span.pull-right 73
+              %p
+                %span.text-bold Max. grade ability(%):
+                %span.pull-right 30
+              %p.pb-5
+                %span.text-bold Min. turning radius (m):
+                %span.pull-right 7
+
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Frame
+              %p.pb-4
+                %span.text-bold Type:
+                %span.pull-right Parallel, tapered channel section type with
+                %span.pull-right reinforcements, stiffeners and cross members
+              %p
+                %span.text-bold.text-red Size (H*W*t):
+                %span.pull-right.text-bold.text-red 290 * 90 (8 + 8)mm
+              %p.pb-5
+                %span.text-bold Width (front/rear):
+                %span.pull-right.text-bold 976 / 856 mm
+
+
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Clutch
+              %p
+                %span.text-bold Type:
+                %span.pull-right Hydraulic control with air assisted
+              %p.pb-5
+                %span.text-bold Plate diameter:
+                %span.pull-right Dry single plate with diaphragm 
+                %span.pull-right Outside diameter: <span class="text-red text-bold">430mm</span>
+
+
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Wheels &amp; Tires
+              %p
+                %span.text-bold Rim:
+                %span.pull-right.text-red.text-bold 8.5-22.5
+              %p
+                %span.text-bold Tire Model:
+                %span.pull-right.text-red.text-bold 12.00R22.5
+              %p.pb-5
+                %span.text-bold Number of tires:
+                %span.pull-right 10 + 1
+
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Suspension 
+                
+              %p
+                %span.text-bold Front suspension:
+                %span.pull-right Tapered leaf spring 9 semi-elliptic leaf spring
+              %p.pb-5
+                %span.text-bold Rear suspension:
+                %span.pull-right Tapered leaf spring 12 semi-elliptic leaf spring
+
+
+            .description-container
+              %h4.w-100.border-bottom.pb-3
+                %span.text-red.text-bold Unit Price:
+                %span.text-red.text-bold FOB Shanghai USD38400.00
+                %br
+                %small <i>(Valid two month from the date 6 July. 2018)</i>
+              %p.text-bold.text-red
+                %span.text-bold Desert type air inlet
+                %span.pull-right JOST 90# saddle
+              %p
+                %span.text-bold Air conditioner, MP3, Radio
+                %span.text-bold.pull-right Power window, Sleeper, etc.
+
+      
+                 
+%section.bg-light-black.text-light.pt-4#footer
+  .container.border-bottom.border-light.pt-4.pb-4
+    .row
+      .col-md-6
+        %h3 Got Questions?
+        %p Not finding what you're looking for? Reach out to Mack Service Operations.
+        %p
+          %a FAQs 
+        %p
+          %a Request for Assistance
+      .col-md-6
+        %h3 Training
+        %p Watch videos on Mack concrete boom pump training.
+        %a View all training materials
+    .row
+      .col-md-6
+        %p Keep in touch with CAMC
+        %input.border-0.background-light-black.p-2{type: 'email', placeholder: 'Email'}
+      .col-md-6.d-flex.justify-content-end
+        %ul
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+        %ul
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+          %li
+            %a Find a dealer
+  .container.pt-4
+    .row
+      .col-md-12.pb-2
+        .float-right.text-right
+          = image_tag 'logo.png', class: 'mb-4 footer-logo'
+          %p Full Tech Equipment and Machinery Inc.
