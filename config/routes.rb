@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   get 'about_us', to: 'home#about_us', as: :about_us
   get 'contact_us', to: 'home#contact_us', as: :contact_us
   get 'product_list', to: 'home#product_list', as: :product_list
-  get 'product', to: 'home#product', as: :product
+  get 'camc', to: 'home#camc', as: :camc
+  get 'camc_dump_truck', to: 'home#camc_dump_truck', as: :camc_dump_truck
+  get 'camc_concrete_mixer', to: 'home#camc_concrete_mixer', as: :camc_concrete_mixer
+  get 'camc_4x2_tractor_truck', to: 'home#camc_4x2_tractor_truck', as: :camc_4x2_tractor_truck
+  get 'camc_6x4_tractor_truck', to: 'home#camc_6x4_tractor_truck', as: :camc_6x4_tractor_truck
   post 'contact_email', to: 'home#contact_email'
 
   # Headers
